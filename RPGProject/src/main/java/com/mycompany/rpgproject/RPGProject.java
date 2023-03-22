@@ -58,6 +58,11 @@ class menu {
 
                     break;
                 case 3:
+                    if (Player.allPlayers.isEmpty()) {
+                        System.out.println("Não existem jogadores para editar!!!");
+                    } else {
+                        Player.EditarJogadorOpt();
+                    }
 
                     break;
                 case 4:
@@ -70,7 +75,7 @@ class menu {
                     System.out.println("Wrong");
                     break;
             }
-        } while (option != 4);
+        } while (option != 5);
     }
 }
 
